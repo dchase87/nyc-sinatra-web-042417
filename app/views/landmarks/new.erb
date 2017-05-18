@@ -8,20 +8,37 @@
   <br><br>
 
   <label>Year Completed:</label>
+<<<<<<< HEAD
 
     <input type="text" name="landmark[year_completed]" id="landmark_year_completed">
+=======
+    <input type="text" name="landmark[year_completed]" id="landmark_year_completed">
+
+>>>>>>> e879054c9e8e18b44145677ce0f8ab5a1626c7b9
     <br><br>
 
   <label>Choose an Existing Figure:</label>
 
     <br>
+<<<<<<< HEAD
   <% @figures.each do |figure| %>
 
     <input type="checkbox" name="figure[name][]" value="<%=figure.id%>" id="figure_<%=figure.id%>">
 
+=======
+
+  <% @figures.each do |figure| %>
+    <input type="checkbox" name="figure[name][]" value="<%=figure.id%>" id="figure_<%=figure.id%>">
+>>>>>>> e879054c9e8e18b44145677ce0f8ab5a1626c7b9
       <%=figure.name%>
       <br>
     </input>
     <% end %>
+<<<<<<< HEAD
   <input type="submit" value="Create New Landmark">
+=======
+
+  <input type="submit" value="Create New Landmark">
+
+>>>>>>> e879054c9e8e18b44145677ce0f8ab5a1626c7b9
 </form>

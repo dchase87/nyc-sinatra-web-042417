@@ -1,7 +1,7 @@
 <h1>Landmarks:</h1>
 <p>
   <% @landmarks.each do |landmark| %>
-    <a href="/landmarks/<%=landmark.id%>"><%= landmark.name %></a>
-      <p>Built in <%= landmark.year_completed %></p>
+    <a href="/landmarks/<%=landmark.id%>"><%= landmark.name %></a>:
+    <%= landmark.year_completed %>
   <% end %>
 </p>

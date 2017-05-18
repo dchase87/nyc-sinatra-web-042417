@@ -8,21 +8,21 @@
   <br><br>
 
   <label>Year Completed:</label>
-
     <input type="text" name="landmark[year_completed]" id="year_completed">
+
     <br><br>
 
   <label>Choose an Existing Figure:</label>
 
     <br>
+
   <% @figures.each do |figure| %>
-
     <input type="checkbox" name="figure[name][]" value="<%=figure.id%>" id="figure_<%=figure.id%>">
-
       <%=figure.name%>
       <br>
     </input>
     <% end %>
+
   <input type="submit" value="Edit Landmark">
   <input id="hidden" type="hidden" name="_method" value="patch">
 </form>
