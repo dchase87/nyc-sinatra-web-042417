@@ -5,12 +5,15 @@ class FiguresController < ApplicationController
     erb :'figures/index'
   end
 
+
   get '/figures/new' do
     @figures = Figure.all
     @landmarks = Landmark.all
     @titles = Title.all
     erb :'figures/new'
   end
+
+
 
   post '/figures' do
     @figure = Figure.create(params[:figure])
@@ -47,4 +50,15 @@ class FiguresController < ApplicationController
     end
     redirect "/figures/#{@figure.id}"
   end
+
+  get '/figures/:id/edit' do
+    @figure = Figure.find(params[:id])
+    erb :'figures/show'
+  end
+
+  post '/figures/:id/edit' do
+
+  end
+
+
 end
